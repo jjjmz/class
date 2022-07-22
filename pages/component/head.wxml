@@ -1,0 +1,12 @@
+<!--pages/component/head.wxml-->
+<view class="header">
+    <view class="container hdCon">
+        <navigator open-type="switchTab" url="/pages/index/index" class="logo">
+            <image mode="heightFix" src="/images/logo.png"></image>
+        </navigator>
+        <view class="kefu">
+            <button class="btn" open-type="contact"></button>
+            <image mode="heightFix" src="/images/xiaoxi.png"></image>
+        </view>
+    </view>
+</view>

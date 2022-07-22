@@ -1,0 +1,45 @@
+/* pages/vocabulary/vocabulary.wxss */
+/* 选择周 */
+.course {
+  background-color:rgb(146, 233, 227);
+  padding-bottom: 20rpx;
+}
+.course .text{
+  padding-left: 20px;
+}
+.course view{
+  text-align: center;
+}
+
+/* 课表 */
+.day {
+  border: 20rpx solid rgb(233, 230, 230);
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.vcb-none {
+  text-align: center;
+  background-color: rgb(238, 179, 179);
+  border-radius: 20rpx;
+}
+.vcb-head {
+  display: flex;
+  background-color: hotpink;
+  border: 5rpx solid black;
+}
+.vcb-data {
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  border: 3rpx solid black;
+  border-top: 0;
+}
+.vcb-noandweek {
+  width: 33.3%;
+  text-align: center;
+  border-right: 5rpx solid black;
+}
+.vcb-times {
+  width: 33.3%;
+  text-align: center;
+}

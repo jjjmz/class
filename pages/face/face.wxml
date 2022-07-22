@@ -1,0 +1,34 @@
+<!--pages/face/face.wxml-->
+<head></head>
+<form bindsubmit="formSubmit">
+<view class="allinfo">
+  <!-- 学生信息 -->
+  <view class="sinfo">
+    <view wx:if="{{career=='学生'}}">
+      <view>学号：{{id}}</view>
+      <view>姓名：{{career_name}}</view>
+    </view>
+    <view wx:if="{{career=='老师'}}">
+      <view>学号：<input type="number" name="snumber" /></view>
+      <view>姓名：<input type="text" name="sname" /></view>
+    </view>
+    
+  </view>
+
+  <!-- 学生人脸 -->
+  <view class="sface">
+    <view class="zhaoxiang" bindtap="clickFace">请上传人脸图片:
+      <!-- 图片要换 -->
+      <image src="/images/kjs.png"></image>
+    </view>
+    <view hidden="{{face_img_hidden}}">
+      <image src="{{face_img!=''?face_img:''}}" mode="widthFix" type="file"></image>
+    </view>
+  </view>
+
+  <!-- 提交 -->
+  <view class="sub">
+    <button form-type="submit" type="primary">上传</button>
+  </view>
+</view>
+</form>

@@ -1,0 +1,41 @@
+<view class="header">
+    <view class="container hdCon">
+        <navigator open-type="switchTab" url="/pages/index/index" class="logo">
+            <image mode="heightFix" src="/images/logo.png"></image>
+        </navigator>
+        <view class="kefu">
+            <button class="btn" open-type="contact"></button>
+            <image mode="heightFix" src="/images/xiaoxi.png"></image>
+        </view>
+    </view>
+</view>
+<swiper class="banner" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay>
+    <swiper-item>
+        <image src="/images/banner1.png"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/images/banner2.png"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/images/banner3.jpg"></image>
+    </swiper-item>
+</swiper>
+<scroll-view class="major">
+    <view wx:if="{{islogin}}">
+        <view class="majorCon" wx:for="{{majorCon}}">
+        <navigator class="box" url="{{item.url}}">
+            <image class="pic" src="{{item.pic}}" />
+            <view class="txt">{{item.text}}</view>
+        </navigator>
+        </view>
+    </view>
+    <view wx:else>
+        <view class="majorCon" wx:for="{{majorCon}}">
+        <navigator class="box" url="/pages/mine/mine" bindtap="gotologin">
+            <image class="pic" src="{{item.pic}}" />
+            <view class="txt">{{item.text}}</view>
+        </navigator>
+    </view>
+    </view>
+    
+</scroll-view>

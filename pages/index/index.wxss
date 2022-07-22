@@ -1,0 +1,69 @@
+.header {
+  width: 750rpx;
+  height: 90rpx
+}
+
+.hdCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hdCon navigator,
+.hdCon .kefu {
+  height: 50rpx;
+}
+
+.hdCon image {
+  height: 100%;
+}
+
+.kefu {
+  position: relative;
+  animation: dh linear 1s infinite alternate;
+}
+
+.kefu .btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.banner {
+  height: 300rpx;
+  border: 1px;
+}
+
+.banner image {
+  width: 100%;
+  height: 300rpx;
+}
+
+ /* .major {
+  display: flex;
+ } */
+
+.majorCon {
+  display: inline-flex;
+  padding: 20rpx 0;
+  width: 25%;
+}
+
+.major .box {
+  text-align: center;
+  width: 190rpx;
+}
+
+.major .pic {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.major .txt {
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}

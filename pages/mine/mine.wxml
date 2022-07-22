@@ -1,0 +1,23 @@
+<!--pages/mine/mine.wxml-->
+
+<head></head>
+
+<view class="user">
+  <block wx:if="{{!hasUserInfo}}">
+      <view class="upic" bindtap="getUserProfile">
+        <image src="{{userhead}}"></image>
+      </view>
+      <view class="uname" bindtap="getUserProfile">{{username}}</view>
+  </block>
+
+  <block wx:else>
+    <view class="upic" bindtap="bindtologin">
+      <image src="{{userhead}}"></image>
+    </view>
+    <view class="uname" bindtap="bindtologin">{{username}}</view>
+  </block>
+</view>
+
+
+<view class="uinfo">
+</view>

@@ -1,0 +1,15 @@
+<!--pages/mask/mask.wxml-->
+<head></head>
+<view class="pickers">
+  <view class="pic">选择课程名:
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{courses}}" range-key="{{'name'}}">
+      <view>{{courses[index].name}}</view>
+    </picker>
+  </view>
+  <view class="pic">选择授课编号:
+    <picker bindchange="bindPickerChange_2" value="{{index}}" range="{{days}}" range-key="{{'no'}}">
+      <view>{{days[cIndex].no}}</view>
+    </picker>
+  </view>
+  <button class="signup" type="primary" bindtap="bindSignIn">提交检查</button>
+</view>

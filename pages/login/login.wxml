@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+
+<head></head>
+<form bindsubmit="formSubmit">
+  <view class="allinfo">
+    <!-- 信息 -->
+    <radio-group bindchange="radiochange">
+      <label wx:for="{{items}}">
+        <radio value="{{items[index]}}" checked="true"> <view>{{items[index]}}</view></radio>
+      </label>
+    </radio-group>
+
+    <view class="sinfo">
+      <view>学号：<input type="number" name="sid" /></view>
+      <view>密码：<input type="password" name="spassword" /></view>
+    </view>
+
+    <!-- 提交 -->
+    <view class="sub">
+      <button form-type="submit" type="primary">登录</button>
+    </view>
+  </view>
+</form>

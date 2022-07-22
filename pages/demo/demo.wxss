@@ -1,0 +1,61 @@
+
+.sk {
+  margin: 40rpx;
+  text-align: center;
+  background-color: greenyellow;
+  border-radius: 20rpx;
+  /* display: inline; */
+}
+.sk input {
+  border: 1rpx solid black;
+  display: inline-flex;
+  margin: 10rpx;
+  width: 425rpx;
+}
+.signup {
+  border-radius: 50%;
+}
+
+
+
+/* 是否签到 */
+.btn {
+  display: inline-flex;
+  margin-left: 8rpx;
+}
+.btn button {
+  border-radius: 20rpx;
+  background-color: rgb(250, 158, 104);
+}
+/* 名单 */
+.sinfo {
+  border: 20rpx solid rgb(233, 230, 230);
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.shead_off {
+  display: flex;
+  background-color: rgb(236, 126, 230);
+  border: 5rpx solid black;
+}
+.sdata_off {
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  border: 3rpx solid black;
+  border-top: 0;
+}
+.sid_off {
+  width: 33.3%;
+  text-align: center;
+  border-right: 3rpx solid black;
+}
+.sname_off {
+  width: 33.3%;
+  text-align: center;
+  border-right: 3rpx solid black;
+}
+.ssign_off {
+  width: 33.3%;
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+<head></head>
+
+<form bindsubmit="bindLookSign">
+  <view class="sk">
+    <view>输入授课编号:
+      <input name="teachNo" />
+    </view>
+    <view>
+      <button form-type="submit" class="signup" type="primary">查看签到</button>
+    </view>
+  </view>
+</form>
+<!-- 学生自查 -->
+<view hidden="{{shidden}}">
+  <view>0-已签到，1-补签，2-未签到</view>
+签到情况：{{login}}
+</view>
+<!-- 名单 -->
+<view hidden="{{infohidden}}">
+  <view class="btn">
+    <button bindtap="sign_on_change">已签到</button>
+    <button bindtap="sign_off_change">未签到</button>
+  </view>
+  <view>0-已签到，1-补签，2-未签到</view>
+  <!-- 已签到 -->
+  <view class="sinfo" hidden="{{ishidden}}">
+    <view class="shead_off">
+      <view class="sid_off">学生id</view>
+      <view class="sname_off">学生姓名</view>
+      <view class="ssign_off">签到情况</view>
+    </view>
+    <view wx:for="{{sign_on_data}}" class="sdata_off">
+      <view class="sid_off">{{item.id}}</view>
+      <view class="sname_off">{{item.name}}</view>
+      <view class="ssign_off">{{item.sign}}</view>
+    </view>
+  </view>
+  <!-- 未签到，点击后补签 -->
+  <view class="sinfo" hidden="{{!ishidden}}">
+    <view class="shead_off">
+      <view class="sid_off">学生id</view>
+      <view class="sname_off">学生姓名</view>
+      <view class="ssign_off">签到情况</view>
+    </view>
+    <view wx:for="{{sign_off_data}}" bindtap="daiSign" data-item="{{item}}" class="sdata_off">
+      <view class="sid_off">{{item.id}}</view>
+      <view class="sname_off">{{item.name}}</view>
+      <view class="ssign_off">{{item.sign}}</view>
+    </view>
+  </view>
+</view>

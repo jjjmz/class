@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/mine/mine",
+    "pages/vocabulary/vocabulary",
+    "pages/face/face",
+    "pages/signin/signin",
+    "pages/login/login",
+    "pages/mask/mask"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "课堂“守护者”",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#fac",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text":"首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_1.png"
+      },{
+        "pagePath": "pages/demo/demo",
+        "text": "签到管理",
+        "iconPath": "/images/sign.png",
+        "selectedIconPath": "/images/sign_1.png"
+      },{
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/mine.png",
+        "selectedIconPath": "/images/mine_1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

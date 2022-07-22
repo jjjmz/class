@@ -1,0 +1,31 @@
+<!--pages/vocabulary/vocabulary.wxml-->
+<head></head>
+<view class="course">
+  <text>请选择课程：</text>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{courses}}" range-key="{{'name'}}">
+    <view>{{courses[index].no}} {{courses[index].name}}</view>
+  </picker>
+</view>
+<view class="day">
+
+  <view wx:if="{{days==null&courses==null}}" class="vcb-none">
+    无课程
+  </view>
+  <view wx:else="">
+    <view class="vcb-head">
+      <view class="vcb-noandweek">授课编号</view>
+      <view class="vcb-noandweek">授课周次</view>
+      <view class="vcb-times">授课节次</view>
+    </view>
+  </view>
+  <view wx:for="{{days}}" class="vcb-data">
+    <view class="vcb-noandweek">{{item.no}}</view>
+    <view class="vcb-noandweek">{{item.week}}</view>
+    <view class="vcb-times">{{item.times}}</view>
+  </view>
+
+
+
+
+
+</view>

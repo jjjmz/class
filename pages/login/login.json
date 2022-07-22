@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "head":"/pages/component/head"
+  },
+  "navigationBarTitleText":"课堂“守护者”"
+}

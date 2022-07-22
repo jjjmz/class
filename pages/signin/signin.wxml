@@ -1,0 +1,16 @@
+<!--pages/signin/signin.wxml-->
+<head></head>
+<view class="pickers">
+  <view class="pic">选择课程名:
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{courses}}" range-key="{{'name'}}">
+      <view>{{courses[index].name}}</view>
+    </picker>
+  </view>
+  <view class="pic">选择授课编号:
+    <picker bindchange="bindPickerChange_2" value="{{index}}" range="{{days}}" range-key="{{'no'}}">
+      <view>{{days[cIndex].no}}</view>
+    </picker>
+  </view>
+  <!-- 开启签到接口 使用授课号 签到成功跳转demo，传递授课号-->
+  <button class="signup" type="primary" bindtap="bindSignIn">提交签到</button>
+</view>
